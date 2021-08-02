@@ -79,6 +79,19 @@ int randomNumber=(int)Math.floor(Math.random()*(max-min+1)+min)
 
 ```
 
+When checking Strings use ".equals()" instead of "==":
+
+```java
+if(string=="word"){
+  //won't work most of the time
+}
+
+if(string.equals("word")){
+  //will work
+}
+
+```
+
 ### Operators
 
 ```java
@@ -123,7 +136,28 @@ for(int i = 0; i < 11; i++){
 To create a method/function, put it in the class.
 
 ```java
-static void myMethod() {
+static void myMethod(arguments) {
     // code to be executed
   }
+```
+
+Then call them in the main to use them.
+
+```java
+myMethod(arguments);
+```
+
+Here we use "void" to only execute code and not return any values, to return values, replace "void" by the type of the value you want to return.
+
+```java
+static double myMethod(double height,double width) {
+  double area= height*width;
+  return area
+}
+
+```
+
+```java
+double calculatedArea= myMethod(50,60.3);
+
 ```
