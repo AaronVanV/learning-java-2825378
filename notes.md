@@ -117,3 +117,13 @@ for(int i = 0; i < 11; i++){
     System.out.println("reached 10")
 }
 ```
+
+### Methods
+
+To create a method/function, put it in the class.
+
+```java
+static void myMethod() {
+    // code to be executed
+  }
+```
