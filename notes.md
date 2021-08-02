@@ -161,3 +161,44 @@ static double myMethod(double height,double width) {
 double calculatedArea= myMethod(50,60.3);
 
 ```
+
+### Object oriented
+
+To create objects using constructors we create a new .java file where we define all attributes.
+Then using the this. we make it possible create new objects and give values to these attributes.
+We can also create functions that can be called onto the objects.
+
+```java
+public class Triangle {
+    double base;
+    double height;
+    double sideLen0;
+    double sideLen1;
+    double sideLen2;
+
+    public Triangle(double base, double height, double sideLen0,double sideLen1,double sideLen2){
+        this.base=base;
+        this.height=height;
+        this.sideLen0=sideLen0;
+        this.sideLen1=sideLen1;
+        this.sideLen2=sideLen2;
+    }
+
+    public double findArea(){
+        return(this.base*this.height)/2;
+    }
+}
+
+```
+
+Then we can create objects in the first .java project and call functions and attributes.
+
+```java
+ public static void main(String[] args){
+        Triangle triangle1= new Triangle(15,3,6,2,3);
+        Triangle triangle2= new Triangle(25,4,6,7,1);
+        Triangle triangle3= new Triangle(65,6,6,9,4);
+        System.out.println(triangle1.findArea());
+        System.out.println(triangle2.base);
+    }
+```
