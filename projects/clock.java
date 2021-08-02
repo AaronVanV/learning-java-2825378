@@ -17,6 +17,7 @@ public class clock {
             workHours=24+workHours;
         }
 
+        //put 2 values into array to both be returned
         int[] workTime= new int [2];
         workTime[0]=workHours;
         workTime[1]=workMinutes;
